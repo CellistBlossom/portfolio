@@ -6,7 +6,7 @@ body {
 
 .navbar {
     overflow: hidden;
-    background-color: #a7edff;
+    background-color: #DAEAF6;
     font-family: Arial;
    }
    
@@ -36,7 +36,11 @@ body {
    }
    
    .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #a0d6e4;
+    background-color: #9cc7e7;
+   }
+
+   .dropbtn a:hover {
+    color:#124E96;
    }
    
    .dropdown-content {
@@ -58,7 +62,8 @@ body {
    }
    
    .dropdown-content a:hover {
-    background-color: #ccf5ff;
+    background-color: #DAEAF6;
+    color:#124E96;
    }
    
    .dropdown:hover .dropdown-content {
@@ -87,7 +92,7 @@ body {
   }
 
   #footer-navigation {
-    background-color:#a7edff;
+    background-color:#DAEAF6;
     min-height:40px; 
     border:2px solid white;
     text-align:right;
@@ -99,4 +104,14 @@ body {
 
   #header {
     margin-left:5%;
+  }
+
+  a {
+    text-decoration:none;
+    color:#124E96 ;
+  }
+
+  a:hover {
+    text-decoration:none;
+    color:#FF008E;
   }
