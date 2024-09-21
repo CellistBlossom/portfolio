@@ -2,6 +2,7 @@ body {
     color:aliceblue;
     min-height:100%;
     margin:0;
+    text-align:center;
 }
 
 .navbar {
@@ -114,4 +115,16 @@ body {
   a:hover {
     text-decoration:none;
     color:#FF008E;
+  }
+
+  .center-div {
+    width:75%;
+    text-align:left;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .center {
+    text-align:center;
   }
