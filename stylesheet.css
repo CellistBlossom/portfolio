@@ -129,3 +129,19 @@ body {
   .center {
     text-align:center;
   }
+
+  #btn-container {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+  }
+
+    #top-btn {
+      background: white;
+      cursor: pointer;
+      border-radius: 15px;
+      border-width:1px;
+      outline: solid;
+    }

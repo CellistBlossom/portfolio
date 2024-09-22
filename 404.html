@@ -11,6 +11,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     </head>
     <body>
@@ -27,6 +28,21 @@
                 <div class="center"> 
                 <p>Not found :(</p>
                 </div>
+                <div id="btn-container">
+                    <button id="top-btn" onclick="topFunction()"><lottie-player id="top" src="/icons/top.json" background="transparent"  speed="1"  style="width: 75px; height: 75px;"></lottie-player></button>
+                 </div>
+                     <script>
+                         function topFunction() {
+               document.documentElement.scrollTop = 0;
+             } 
+                     </script>
+                     <script>
+                         var lottiePlayer = document.getElementsByTagName("lottie-player");
+             
+             $(lottiePlayer).on('mouseenter', function(event) {
+                 this.play()
+             });
+                     </script>
         <script>
           $(document).ready(function(){
               $("#footer").load("footer.html");
