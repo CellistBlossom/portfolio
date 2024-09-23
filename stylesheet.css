@@ -145,3 +145,38 @@ body {
       border-width:1px;
       outline: solid rgb(180, 180, 180);
     }
+
+    .artifacts-container {
+      display:flex;
+      flex-wrap:wrap;
+      flex-direction: row;
+      justify-content:center;
+      gap:10px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .artifact-box {
+      width:300px;
+      height:150px;
+      background-color:#DAEAF6;
+      border:3px solid black;
+      border-radius:5px;
+    }
+
+    .small-btn {
+      background:white;
+      cursor:pointer;
+      border-width:1px;
+      border-radius:10px;
+      outline: solid rgb(180, 180, 180);
+    }
+
+    .artifact-box h2 {
+      font-size:20px;
+      font-family:arial;
+      color:black;
+      text-align:center;
+      margin-top:5px;
+      margin-bottom:0px;
+    }

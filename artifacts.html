@@ -28,6 +28,61 @@
                 <div class="center-div"> 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
+        <div class="artifacts-container">
+            <div class="artifact-box">
+                <h2>Artifact Heading</h2>
+                <p>artifact description</p>
+                <button class="small-btn"><lottie-player class="download" src="icons/download.json" background="transparent"  speed="1"  style="width: 25px; height: 25px;"></lottie-player></button>
+            </div>
+            <div class="artifact-box">
+                <h2>Artifact Heading</h2>
+                <p>artifact description</p>
+                <button class="small-btn"><lottie-player class="download" src="icons/download.json" background="transparent"  speed="1"  style="width: 25px; height: 25px;"></lottie-player></button>
+            </div>
+            <div class="artifact-box">
+                <h2>Artifact Heading</h2>
+                <p>artifact description</p>
+                <button class="small-btn"><lottie-player class="download" src="icons/download.json" background="transparent"  speed="1"  style="width: 25px; height: 25px;"></lottie-player></button>
+            </div>
+            <div class="artifact-box">
+                <h2>Artifact Heading</h2>
+                <p>artifact description</p>
+                <button class="small-btn"><lottie-player class="download" src="icons/download.json" background="transparent"  speed="1"  style="width: 25px; height: 25px;"></lottie-player></button>
+            </div>
+            <div class="artifact-box">
+                <h2>Artifact Heading</h2>
+                <p>artifact description</p>
+                <button class="small-btn"><lottie-player class="download" src="icons/download.json" background="transparent"  speed="1"  style="width: 25px; height: 25px;"></lottie-player></button>
+            </div>
+            <div class="artifact-box">
+                <h2>Artifact Heading</h2>
+                <p>artifact description</p>
+                <button class="small-btn"><lottie-player class="download" src="icons/download.json" background="transparent"  speed="1"  style="width: 25px; height: 25px;"></lottie-player></button>
+            </div>
+            <div class="artifact-box">
+                <h2>Artifact Heading</h2>
+                <p>artifact description</p>
+                <button class="small-btn"><lottie-player class="download" src="icons/download.json" background="transparent"  speed="1"  style="width: 25px; height: 25px;"></lottie-player></button>
+            </div>
+            <div class="artifact-box">
+                <h2>Personal Website</h2>
+                <!-- The repo for this is currently private and intentionally leads to a 404.-->
+                <p>artifact description</p>
+                <button class="small-btn" onclick="location.href='https://www.blossomthecellist.xyz/'"><lottie-player class="link" src="icons/link.json" background="transparent"  speed="1"  style="width: 25px; height: 25px;"></lottie-player></button>
+                <button class="small-btn" onclick="location.href='https://github.com/CellistBlossom/blossom'"><lottie-player class="github" src="icons/github.json" background="transparent"  speed="1"  style="width: 25px; height: 25px;"></lottie-player></button>
+            </div>
+            <div class="artifact-box">
+                <h2>Community Website</h2>
+                <p>artifact description</p>
+                <button class="small-btn" onclick="location.href='https://www.smallhomothetyorganization.org/'"><lottie-player class="link" src="icons/link.json" background="transparent"  speed="1"  style="width: 25px; height: 25px;"></lottie-player></button>
+                <button class="small-btn" onclick="location.href='https://github.com/CellistBlossom/smallhomothety'"><lottie-player class="github" src="icons/github.json" background="transparent"  speed="1"  style="width: 25px; height: 25px;"></lottie-player></button>
+            </div>
+            <div class="artifact-box">
+                <h2>This Website!</h2>
+                <p>artifact description</p>
+                <button class="small-btn" onclick="location.href='https://github.com/CellistBlossom/portfolio'"><lottie-player class="github" src="icons/github.json" background="transparent"  speed="1"  style="width: 25px; height: 25px;"></lottie-player></button>
+            </div>
+        </div>
         <div id="btn-container">
             <button id="top-btn" onclick="topFunction()"><lottie-player id="top" src="icons/top.json" background="transparent"  speed="1"  style="width: 75px; height: 75px;"></lottie-player></button>
          </div>
@@ -37,9 +92,23 @@
      } 
              </script>
              <script>
-                 var lottiePlayer = document.getElementsByTagName("lottie-player");
-     
-     $(lottiePlayer).on('mouseenter', function(event) {
+     var lottiePlayer = document.getElementsByClassName("download");
+     $(lottiePlayer).on('click', function(event) {
+         this.play()
+     });
+
+     var lottieTop = document.getElementById("top");
+     $(lottieTop).on('click', function(event) {
+         this.play()
+     });
+
+     var lottieLink = document.getElementsByClassName("link");
+     $(lottieLink).on('mouseenter', function(event) {
+         this.play()
+     });
+
+     var lottieLink = document.getElementsByClassName("github");
+     $(lottieLink).on('mouseenter', function(event) {
          this.play()
      });
              </script>
