@@ -100,6 +100,10 @@ body {
     text-align:right;
   }
 
+  #footer-navigation p {
+    margin:5px;
+  }
+
   #body {
     margin-left:5%;
   }
@@ -154,6 +158,7 @@ body {
       gap:10px;
       margin-left:auto;
       margin-right:auto;
+      margin-bottom:75px;
     }
 
     .artifact-box {
