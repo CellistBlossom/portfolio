@@ -23,11 +23,11 @@
           <div id="navbar">
           </div>
           <div id="main-container">
-            <h1 id="header">404</h1>
+            <h1 id="header"></h1>
             <div id="body">
-                <div class="center"> 
-                <p>Not found :(</p>
-                </div>
+                <!-- For screen reader users -->
+                <p class="screen-reader-text">404 Error Page Not Found</p>
+                <lottie-player id="error404" src="icons/404.json" background="transparent"  speed="1" autoplay loop style="width: 500px; height: 500px;"></lottie-player>
                 <div id="btn-container">
                     <button id="top-btn" onclick="topFunction()"><lottie-player id="top" src="icons/top.json" background="transparent"  speed="1"  style="width: 75px; height: 75px;"></lottie-player></button>
                  </div>
@@ -37,9 +37,9 @@
              } 
                      </script>
                      <script>
-                         var lottiePlayer = document.getElementsByTagName("lottie-player");
+                         var lottieTop = document.getElementById("top");
              
-             $(lottiePlayer).on('click', function(event) {
+             $(lottieTop).on('click', function(event) {
                  this.play()
              });
                      </script>
