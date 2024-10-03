@@ -88,6 +88,11 @@ body {
     font-family:arial;
   }
 
+  h2 {
+    color:black;
+    font-family:arial;
+  }
+
   p {
     color:black;
     font-family:arial;
@@ -155,15 +160,15 @@ body {
       flex-wrap:wrap;
       flex-direction: row;
       justify-content:center;
-      gap:10px;
+      gap:20px;
       margin-left:auto;
       margin-right:auto;
       margin-bottom:75px;
     }
 
     .artifact-box {
-      width:300px;
-      height:150px;
+      width:400px;
+      height:220px;
       background-color:#DAEAF6;
       border:3px solid black;
       border-radius:5px;
@@ -184,6 +189,7 @@ body {
       text-align:center;
       margin-top:5px;
       margin-bottom:0px;
+      background-color:white;
     }
 
     #error404 {
@@ -202,4 +208,10 @@ body {
       position: absolute; 
       width: 1px;
       white-space: nowrap;
+  }
+
+  .artifact-box p {
+    text-align:left;
+    margin-left:20px;
+    margin-right:20px;
   }

@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Resume</title>
+        <title>Resumes</title>
         <link rel="icon" href="favicon/favicon.ico" sizes="any">
         <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
         <link rel="manifest" href="favicon/manifest.json">
@@ -16,6 +16,15 @@
         <link rel="stylesheet" href="stylesheet.css">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <style>
+            .small-btn {
+                margin-top:20px;
+                margin-bottom:20px;
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+            }
+        </style>
     </head>
     <body>
         <script>
@@ -26,11 +35,11 @@
           <div id="navbar">
           </div>
           <div id="main-container">
-            <h1 id="header">Resume</h1>
+            <h1 id="header">Resumes</h1>
             <div id="body">
-                <div class="center-div"> 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+                <h2>Cybersecurity Professional</h2>
+                <iframe src="files/resumes/cyberfellowresume.pdf" style="width:50%; height:500px;" frameborder="0"></iframe>
+                <a href="files/Resumes/cyberfellowresume.pdf" download="Resume 1.pdf"><button class="small-btn"><lottie-player class="download" src="icons/download.json" background="transparent"  speed="1"  style="width: 25px; height: 25px;"></lottie-player></button></a>
         <div id="btn-container">
             <button id="top-btn" onclick="topFunction()"><lottie-player id="top" src="icons/top.json" background="transparent"  speed="1"  style="width: 75px; height: 75px;"></lottie-player></button>
          </div>
@@ -42,6 +51,12 @@
              <script>
                  var lottiePlayer = document.getElementsByTagName("lottie-player");
      
+     $(lottiePlayer).on('click', function(event) {
+         this.play()
+     });
+             </script>
+             <script>
+      var lottiePlayer = document.getElementsByClassName("download");
      $(lottiePlayer).on('click', function(event) {
          this.play()
      });
